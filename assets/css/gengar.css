@@ -1,0 +1,100 @@
+body{
+    background: url("../img/d31xa83-092a65a0-cbf1-4018-98a4-da8768920bf2.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#stat .statPokemon{
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: rgba(165, 55, 200,0.5);
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+#menu button{
+    background-color: rgba(75,0,130,0.7);
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.loading{
+    background-color: #5D366D;
+}
+
+/*ClassList*/
+.fight{
+    content: url("../img/ectoplasma/win.gif");
+}
+.fight2{
+    content: url("../img/ectoplasma/win2.gif");
+}
+.fight3{
+    content: url("../img/ectoplasma/defaite.gif");
+}
+.fight4{
+    content: url("../img/ectoplasma/defaite2.gif");
+}
+.play{
+    content: url("../img/ectoplasma/gengar-gengar-pokemon....gif");
+}
+.play2{
+    content: url("../img/ectoplasma/gengar-pokemon.gif");
+}
+.play3{
+    content: url("../img/ectoplasma/gengar-gengar-pokemon...gif");
+}
+.ectoplasma{
+    content: url("../img/ectoplama.gif")
+}
+#leftStat{
+    animation: 5s;
+    border: transparent;
+    background-color: #5D366D;
+    height: 0;
+    animation-name: combatWin;
+}
+#rightStat{
+    animation: 5s;
+    border: transparent;
+    background-color: #5D366D;
+    height: 0;
+    animation-name: combatWin;
+}
+/*@keyframes combatWin {*/
+/*    from {*/
+/*        height: 0;*/
+/*    }*/
+/*    to {*/
+/*        height: ;*/
+/*    }*/
+/*}*/
+
+/*Animation de transition*/
+.sombre{
+    background: rgba(0,0,0,1);
+    display: none;
+    height: 100vh;
+    z-index: 9;
+    position: relative;
+}
+
+.transition{
+    animation: 5s;
+    animation-name: sombre;
+    display: block;
+
+}
+
+@keyframes sombre {
+    from {
+        background-color: rgba(0,0,0,0);
+    }
+    to {
+        background-color: rgba(0,0,0,1);
+    }
+}
