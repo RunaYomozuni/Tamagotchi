@@ -24,6 +24,7 @@ body{
 }
 .loading{
     background-color: #5D366D;
+    position: relative;
 }
 
 /*ClassList*/

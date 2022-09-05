@@ -11,7 +11,7 @@ function Actions (){
     this.fighting = function () {
         this.gifsFight = ['fight', 'fight2', 'fight3', 'fight4'];
         this.randomForGifs = Math.floor(Math.random() * this.gifsFight.length);
-        gengar.classList.remove(startActions.playing.gifsPlaying[startActions.playing.randomForPlay]);
+        gengar.classList.remove(startActions.playing.gifsPlaying);
         gengar.classList.add(this.gifsFight[this.randomForGifs]);
         setTimeout(function (){
             gengar.classList.remove();
@@ -21,7 +21,7 @@ function Actions (){
     this.playing = function () {
         this.gifsPlaying = ['play', 'play2', 'play3'];
         this.randomForPlay = Math.floor(Math.random() * 3);
-        gengar.classList.remove(startActions.playing.gifsFight[startActions.playing.randomForGifs]);
+        gengar.classList.remove(startActions.playing.gifsFight);
         gengar.classList.add(this.gifsPlaying[this.randomForPlay]);
         setTimeout(function (){
             gengar.classList.remove();
@@ -34,8 +34,8 @@ function Actions (){
         addEventListener('click', function () {
             transition.classList.add('transition');
             setTimeout(function () {
-                // window.open('http://localhost:63342/All%20tp/lecon/JS/Les%20objets/Tamagotchi%20pokemon/view/scaryGengar/scaryGengar.html?_ijt=e3k6l4174j90qodlhvgbf226cq&_ij_reload=RELOAD_ON_SAVE');
-                // window.close();
+                window.open('http://localhost:63342/All%20tp/lecon/JS/Les%20objets/Tamagotchi%20pokemon/view/scaryGengar/scaryGengar.html?_ijt=e3k6l4174j90qodlhvgbf226cq&_ij_reload=RELOAD_ON_SAVE');
+                window.close();
             }, 5000)
         });
     }
@@ -54,7 +54,7 @@ function Stat () {
         this.statSante = 210;
         this.humeur = function () {
 
-            if (randomForGifs === startActions.fighting.gifsFight[0] || startActions.fighting.randomForGifs === startActions.fighting.gifsFight[1]) {
+            if (startActions.fighting.gifsFight[0] || startActions.fighting.randomForGifs === startActions.fighting.gifsFight[1]) {
                 startActions.statHumeur -= startActions.rdmHumeur;
 
 
