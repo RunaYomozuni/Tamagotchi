@@ -1,9 +1,13 @@
+html{
+    height: 100%;
+    width: 100%;
+};
 body{
     background: url("../img/michelle-hesek-giratina-wallpaper.gif");
     background-size: cover;
 }
 h1{
-    margin-top: 20px;
+    margin: 0;
 }
 img{
     margin: 0 50px;

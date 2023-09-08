@@ -34,9 +34,10 @@ function Actions (){
         addEventListener('click', function () {
             transition.classList.add('transition');
             setTimeout(function () {
-                window.open('http://localhost:63342/All%20tp/lecon/JS/Les%20objets/Tamagotchi%20pokemon/view/scaryGengar/scaryGengar.html?_ijt=e3k6l4174j90qodlhvgbf226cq&_ij_reload=RELOAD_ON_SAVE');
+                window.open('file:///Users/coding/Downloads/Tamagotchi-master/view/scaryGengar/scaryGengar.html');
+                console.log("ok");
                 window.close();
-            }, 5000)
+            }, 9000000)
         });
     }
 }

@@ -77,25 +77,25 @@ body{
 
 /*Animation de transition*/
 .sombre{
-    background: rgba(0,0,0,1);
-    display: none;
-    height: 100vh;
-    z-index: 9;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
     position: relative;
 }
 
 .transition{
     animation: 5s;
     animation-name: sombre;
-    display: block;
-
 }
 
 @keyframes sombre {
     from {
         background-color: rgba(0,0,0,0);
+        background-size: cover;
+
     }
     to {
         background-color: rgba(0,0,0,1);
+        background-size: cover;
     }
 }

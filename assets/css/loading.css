@@ -10,7 +10,7 @@
     display: none;
 }
 .loading {
-    animation: 5s;
+    animation: 4s;
     border: transparent;
     background-color: burlywood;
     width: 0;
@@ -24,7 +24,7 @@
     left: 25%;
     position: absolute;
     height: 25px;
-    top: 140%;
+    top: 100%;
     border-radius: 20px;
     display: none;
 }

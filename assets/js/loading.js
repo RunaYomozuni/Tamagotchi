@@ -11,5 +11,5 @@ window.onload = function (){
         loading.style.display = 'none';
         backLoading.style.display = 'none';
         loading_screen.style.display = "none";
-    }, 5000);
+    }, 4000);
 }
