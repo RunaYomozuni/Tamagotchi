@@ -11,7 +11,24 @@ function add_line() {
 }if(document.getElementById('bgSong')==null){
     add_line();
     let audio = document.getElementById('bgSong');
-    audio.volume = 0.8;
+    audio.volume = 0.3;
+}
+
+//Deuxieme musique de fond
+function add_other_line() {
+    let line = document.createElement("audio");
+    let head = document.getElementsByTagName('body')[0];
+    line.type = "audio/mp3";
+    line.src="chuchotement.mp3";
+    line.id="bgSong2" ;
+    line.autoplay = true;
+    line.loop = true;
+    head.appendChild(line);
+}if(document.getElementById('bgSong2')==null){
+    add_other_line();
+    let audio = document.getElementById('bgSong2');
+    audio.volume = 0.4;
+    
 }
 
 
@@ -26,7 +43,23 @@ function scary (){
 }
 talk.addEventListener('click',scary);
 
+function speak(){
+    let talktogengar = ['AHAHAHA,Tu ose essayer de me faire dormir ?','Pour qui te prend tu ?','','Sans fin'];
+    let greatanwser = ["C'est bien au moins tu avoue ton erreur", "Mais je suis pas comme les autres prend en conscience","Ca va tu es pas mechant juste con jte laisse partir tranquille"]
+    let badanswer = ["Aaah tes sûr de ca ?","Pour qui te prend tu ?", "Je vais te faire vivre un cauchemar"]
+    let modal = document.querySelector('.modal-body')
 
+    for (let i = 0; i < talktogengar.length; i++){
+        modal.appendChild(document.createElement('p'))
+        modal.appendChild(document.createTextNode(`${talktogengar[i]}`))
+
+}
+}
+talk.addEventListener('click',speak)
+
+
+
+//non fonctionnel
 let para = document.getElementsByClassName('p');
 function taping() {
     let motaleatoire = ['AHAHAHA','Tu ose essayer de me faire dormir ?','Pour qui te prend tu','Je vais te faire vivre un cauchemar','Sans fin','Mmh finalement non tu m\ intéresses pas assez','Clique sur la croix est dégage'];
@@ -40,7 +73,7 @@ function taping() {
     }
 
 }
-talk.addEventListener('click',taping)
+// talk.addEventListener('click',taping)
 
 // jeu de la croix
 let counter = 0

@@ -18,9 +18,10 @@ function Actions (){
             gengar.classList.add("ectoplasma");
         }, 7000);
     }
+
     this.playing = function () {
         this.gifsPlaying = ['play', 'play2', 'play3'];
-        this.randomForPlay = Math.floor(Math.random() * 3);
+        this.randomForPlay = Math.floor(Math.random() * this.gifsPlaying.length);
         gengar.classList.remove(startActions.playing.gifsFight);
         gengar.classList.add(this.gifsPlaying[this.randomForPlay]);
         setTimeout(function (){
@@ -29,15 +30,13 @@ function Actions (){
         }, 3000);
     }
 
-
     this.sleeping = function (){
         addEventListener('click', function () {
             transition.classList.add('transition');
             setTimeout(function () {
                 window.open('file:///Users/coding/Downloads/Tamagotchi-master/view/scaryGengar/scaryGengar.html');
-                console.log("ok");
                 window.close();
-            }, 9000000)
+            }, 5000)
         });
     }
 }

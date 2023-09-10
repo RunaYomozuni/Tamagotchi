@@ -3,6 +3,7 @@ body{
     background-size: cover;
     position: relative;
     z-index: 1;
+    height: 100%;
 }
 #stat .statPokemon{
     height: 250px;
@@ -92,6 +93,7 @@ body{
     from {
         background-color: rgba(0,0,0,0);
         background-size: cover;
+
 
     }
     to {

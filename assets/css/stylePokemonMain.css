@@ -1,7 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 body{
     background: url("../img/bgPokemon.png") no-repeat;
     background-size: cover;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Orbitron', sans-serif;
     color: gray;
     box-sizing: border-box;
 }
